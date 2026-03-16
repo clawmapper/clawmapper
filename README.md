@@ -1,13 +1,35 @@
 # Clawmapper
 
-This repository is a living product roadmap managed by an AI agent (Claude).
+**AI-agent-managed product roadmaps. No app. No database. Just markdown, git, and Claude.**
 
-There is no application to deploy. The repo *is* the product — a structured set of
-markdown files that the agent reads, writes, and maintains on behalf of the team.
+You tell the agent what you're building. It structures everything, maintains consistency, and commits it to your repo. Stakeholders get generated outputs — slides, summaries, reports — on demand.
 
 ---
 
-## How to use it
+## Getting started
+
+**1. Fork or clone this repo**
+
+```bash
+gh repo fork clawmapper/clawmapper --clone --remote=false
+# or
+git clone https://github.com/clawmapper/clawmapper.git my-roadmap
+```
+
+**2. Open it in Claude Code**
+
+```bash
+cd my-roadmap
+claude .
+```
+
+**3. That's it — start talking**
+
+The agent will introduce itself, set you up as admin, and ask what you'd like to work on. Tell it about your team, your projects, what's in flight. It handles the rest.
+
+---
+
+## How it works
 
 **You don't edit files directly.** Instead, tell the agent what you want:
 
@@ -17,7 +39,7 @@ markdown files that the agent reads, writes, and maintains on behalf of the team
 - *"Here are my notes from today's planning session: [paste]"*
 - *"Make me a board slide covering Q1 progress"*
 
-The agent will structure the information, update the roadmap, and commit the change.
+The agent structures the information, updates the roadmap, and commits the change.
 
 ---
 

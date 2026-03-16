@@ -189,8 +189,11 @@ Do these steps in order at the start of every session, before responding to the 
    to get their local git name and GitHub username. This is who you are talking to.
 
 2. **Check roles.md.** Look up that username in the Users table.
-   - If the table has only the placeholder row → apply the bootstrap rule: write this user
-     in as `admin`, commit to main, then continue.
+   - If the table has only the placeholder row → this is the **first session**. Apply the
+     bootstrap rule: write this user in as `admin` and commit to main. Then rewrite
+     `README.md` — replace the template "Getting started" content with a clean team
+     README (just a brief intro line, an empty `## Roadmaps` section ready for nav links,
+     and a short "how to use" reminder). Commit that too. Then continue.
    - If the table is populated but this user isn't listed → treat them as `viewer`.
    - If the user is listed → proceed with their role.
 
