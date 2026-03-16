@@ -8,18 +8,18 @@ You tell the agent what you're building. It structures everything, maintains con
 
 ## Getting started
 
-**1. Fork or clone this repo**
+**1. Use this template**
+
+Click **"Use this template"** on [clawmapper/clawmapper](https://github.com/clawmapper/clawmapper) to create your own private copy, then clone it:
 
 ```bash
-gh repo fork clawmapper/clawmapper --clone --remote=false
-# or
-git clone https://github.com/clawmapper/clawmapper.git my-roadmap
+gh repo clone your-org/your-repo-name
 ```
 
 **2. Open it in Claude Code**
 
 ```bash
-cd my-roadmap
+cd your-repo-name
 claude .
 ```
 
