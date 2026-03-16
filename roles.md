@@ -12,7 +12,7 @@ rules on `main` for `CLAUDE.md`, `roles.md`, and `memory/`.
 
 | GitHub Username | Role          | Notes                        |
 |-----------------|---------------|------------------------------|
-| benfreeston      | admin         | Bootstrap admin               |
+| _(none yet)_    | —             | First user will be bootstrapped as admin |
 
 ---
 
