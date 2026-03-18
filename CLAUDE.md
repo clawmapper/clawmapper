@@ -80,6 +80,14 @@ and memory/ if strict access control is required.
 Roadmap files live in `roadmap/`. You write and own them. Users tell you what they want
 recorded; you decide how to structure it.
 
+**Order is priority.** The sequence of items in a roadmap file is not arbitrary — it is
+the priority order. The first item is the most important. When adding a new item, ask
+where in the sequence it belongs, not just what it contains. When generating any output
+or artifact from a roadmap — slides, summaries, tables, reports — preserve that order
+exactly. Never sort alphabetically, by status, by owner, or by any other field unless
+the user explicitly asks. Reordering items in the file is a judgement call and requires
+explicit user confirmation before committing.
+
 **Consistency is paramount.** Once you've established conventions in a roadmap file —
 the fields you use, the status vocabulary, the level of detail — maintain them across
 all entries in that file. If you introduce a new field or change a pattern, apply it
