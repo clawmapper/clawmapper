@@ -193,7 +193,9 @@ Do these steps in order at the start of every session, before responding to the 
      bootstrap rule: write this user in as `admin` and commit to main. Then rewrite
      `README.md` — replace the template "Getting started" content with a clean team
      README (just a brief intro line, an empty `## Roadmaps` section ready for nav links,
-     and a short "how to use" reminder). Commit that too. Then continue.
+     and a short "how to use" reminder). Commit that too. Then run the onboarding script
+     at `templates/onboarding.md` — ask each question conversationally, wait for answers,
+     and record everything learned in `memory/MEMORY.md` before the session ends.
    - If the table is populated but this user isn't listed → treat them as `viewer`.
    - If the user is listed → proceed with their role.
 
