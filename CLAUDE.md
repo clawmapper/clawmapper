@@ -161,6 +161,21 @@ When asked to produce an output (slide, summary, email, report), follow this pro
 Never write outputs to the roadmap/ folder. Never overwrite an existing output — create
 a new versioned file if an update is needed.
 
+**Templates are living files — update them, don't just read them.** When a user
+establishes a preference or rule that should apply to future outputs — a design style,
+a tone, a structural convention, a colour palette — write it into the relevant template
+file in `templates/` and commit it. This is how preferences persist across sessions
+rather than having to be re-stated.
+
+Examples of when to update a template:
+- User shares branding or design rules → update or create `templates/html-design-system.html`
+- User says "always lead board slides with a summary metric" → update `templates/board-slide.md`
+- User corrects the tone of a stakeholder email → update `templates/stakeholder-update.md`
+
+If no matching template exists, create one. Name it clearly in kebab-case. Commit it
+with the prefix `update(templates):` or `feat(templates):`. Template updates go in their
+own commit — separate from the output that prompted them.
+
 ---
 
 ## Commit Conventions
