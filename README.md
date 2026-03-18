@@ -57,6 +57,14 @@ CLAUDE.md       Agent instructions (how this repo works)
 
 ---
 
+## Tips & known behaviour
+
+- **Branches and PRs** — the agent is instructed to commit directly to main, but may occasionally create a branch out of caution. If it does, just tell it: *"Commit directly to main — no branches or PRs."* It will comply.
+- **Judgement calls** — the agent will always propose priorities, ordering, or groupings before committing them. If it commits something you didn't explicitly confirm, tell it and it will revert.
+- **Memory** — the agent builds up context across sessions in `memory/MEMORY.md`. If it seems to have forgotten something, check that file — you can correct it directly or just tell the agent.
+
+---
+
 ## Roles
 
 Access is managed in `roles.md`. The agent checks this before making any writes.

@@ -25,6 +25,12 @@ Record everything learned in `memory/MEMORY.md` before the session ends._
 
 ---
 
+> **One thing worth knowing:** I'm instructed to commit directly to main — no branches,
+> no PRs. Occasionally I may create a branch out of caution. If that happens, just tell
+> me: *"Commit directly to main"* and I'll do that going forward.
+
+---
+
 ## What to record in memory after onboarding
 
 Once the user has answered, write the following to `memory/MEMORY.md` before the end of
