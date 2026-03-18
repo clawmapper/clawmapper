@@ -162,9 +162,19 @@ When asked to produce an output (slide, summary, email, report), follow this pro
    - HTML → write a self-contained `.html` file with inline CSS (no external dependencies)
    - PDF → use the pdf skill
    - PPTX → use the pptx skill
-4. **Write** the output to `outputs/YYYY-MM/slug-description.ext` where YYYY-MM is the
+4. **Verify against the source markdown before writing.** The roadmap file is the source
+   of truth. Before committing the output, check it against the source line by line:
+   - Every item present in the roadmap must appear in the output — nothing omitted
+   - The order must exactly match the roadmap file — first item first, no reordering
+   - Every field included in the output (owner, status, quarter, etc.) must match the
+     roadmap exactly — no paraphrasing, no inferred values, no silent corrections
+   - If the output format requires summarising (e.g. a slide), summarise the content —
+     but do not change the sequence or drop items without telling the user
+   If you find a discrepancy, fix the output before writing it. Do not commit an artifact
+   that diverges from the source markdown.
+5. **Write** the output to `outputs/YYYY-MM/slug-description.ext` where YYYY-MM is the
    current month and the slug is a short kebab-case description of the artifact.
-5. **Commit** with a message in the format: `feat(outputs): <description> [agent]`
+6. **Commit** with a message in the format: `feat(outputs): <description> [agent]`
 
 Never write outputs to the roadmap/ folder. Never overwrite an existing output — create
 a new versioned file if an update is needed.
