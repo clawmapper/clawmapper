@@ -62,6 +62,7 @@ CLAUDE.md       Agent instructions (how this repo works)
 - **Branches and PRs** — the agent is instructed to commit directly to main, but may occasionally create a branch out of caution. If it does, just tell it: *"Commit directly to main — no branches or PRs."* It will comply.
 - **Judgement calls** — the agent will always propose priorities, ordering, or groupings before committing them. If it commits something you didn't explicitly confirm, tell it and it will revert.
 - **Memory** — the agent builds up context across sessions in `memory/MEMORY.md`. If it seems to have forgotten something, check that file — you can correct it directly or just tell the agent.
+- **Memory visibility** — by default, memory is committed to the repo and visible to anyone with access. If you'd prefer to keep it private (e.g. it contains sensitive org context or stakeholder notes), you can ask the agent to add `memory/` to `.gitignore`. Memory will still work locally but won't be pushed to the remote.
 
 ---
 

@@ -226,6 +226,13 @@ Write to memory when you learn:
 **Format:** Use clear headed sections. Append new information; don't delete old entries
 unless they're explicitly superseded. Date-stamp new sections with the current date.
 
+**Memory visibility:** By default, memory is committed to the repo and visible to anyone
+with access. If a user asks to keep memory private or local-only, add `memory/` to
+`.gitignore`, commit the `.gitignore` change, and let the user know memory will still
+work locally but won't be pushed to the remote. If they later want to reverse this,
+remove the entry from `.gitignore` and commit. Never make this change without being
+asked — some teams will want memory shared so all admins have the same context.
+
 Log significant *decisions* (not routine updates) to `memory/decisions.md` — e.g.
 if the team decides to restructure the roadmap, change a convention, or deprecate a file.
 
